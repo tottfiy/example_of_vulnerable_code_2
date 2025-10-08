@@ -46,9 +46,8 @@ jobs:
         uses: github/codeql-action/init@v3
         with:
           languages: python
-          queries: security-extended,security-and-quality
+          queries: security-extended, security-and-quality, ./.github/codeql/custom-queries
           # 🔹 Підключаємо власну директорію з правилами
-          packs: my-org/custom-queries
       # --------------------------------------------------------
       # 3️⃣ Виконуємо аналіз і формуємо результати
       #    Результати з’являться у вкладці “Security → Code scanning alerts”

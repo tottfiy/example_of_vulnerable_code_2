@@ -1,3 +1,3 @@
-name: my-org/custom-queries
+name: custom-queries
 version: 0.0.1
 libraryPathDependencies: codeql/python-all
