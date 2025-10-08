@@ -1,5 +1,8 @@
+/**
+ * Правило: знаходить виклики eval()
+ */
 import python
 
-from CallExpr call
-where call.getCallee().getName() = "eval"
+from Call call
+where call.getFunc().getName() = "eval"
 select call, "Виклик eval() може бути небезпечним!"
