@@ -185,3 +185,10 @@ def calculate_expression(expression):
 
 # Приклад використання:
 calculate_expression("2 + 3 * 4")
+
+
+def run_user_expression():
+    user_input = input("Enter math expression: ")
+    # ⚠️ небезпечне виконання введеного коду
+    result = eval(user_input)
+    print("Result:", result)
