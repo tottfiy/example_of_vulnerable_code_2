@@ -7,6 +7,7 @@
 name: CodeQL Scan
 
 on:
+  workflow_dispatch: {}
   # 🔹 Запуск аналізу при кожному push у головну гілку
   push:
     branches: [ main ]
