@@ -18,7 +18,7 @@ jobs:
 
       - name: Generate SBOM for Python project
         run: |
-          ./syft . -o cyclonedx-json > sbom.json
+          syft . -o cyclonedx-json > sbom.json
 
       - name: Upload SBOM as artifact
         uses: actions/upload-artifact@v4
